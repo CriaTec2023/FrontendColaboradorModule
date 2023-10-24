@@ -2,15 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { ColaboradorComponent } from './colaborador/colaborador.component';
-import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
+import { BlogComponent } from './blog/blog.component';
+import { PublisherComponent } from './publisher/publisher.component';
 
 
 @NgModule({
   declarations: [  
-    ColaboradorComponent,
-    HomeComponent,],
+ 
+    BlogComponent, PublisherComponent
+  ],
   imports: [
     CommonModule,
     PagesRoutingModule,
