@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import { StoreModule } from '@ngrx/store';
+import { CoreModule } from './core/core.module';
+import { ComponentModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,13 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ComponentModule,
     PagesModule,
-    SharedModule
+    SharedModule,
+    StoreModule.forRoot({}, {}),
+    CoreModule
   ],
-  providers: [],
+  providers: [AppModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

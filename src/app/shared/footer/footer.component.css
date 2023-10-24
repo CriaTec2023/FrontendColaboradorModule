@@ -1,19 +1,13 @@
 #footer {
+  
   background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-vetores-gratis%2Ffundo-preto-liso&psig=AOvVaw2xiLGNyioZZnGue5ArC9fG&ust=1698198225491000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKCL6szHjYIDFQAAAAAdAAAAABAE") center center no-repeat;
   color: #fff;
   font-size: 14px;
-  position: relative;
-}
-
-#footer::before {
-  position: absolute;
+  width: 100vw;
   background: rgba(26, 46, 64, 0.85);
-  z-index: 1;
 }
 
 #footer .footer-top {
-  position: relative;
-  z-index: 2;
   text-align: center;
   padding: 80px 0;
 }
@@ -43,30 +37,9 @@
   text-align: left;
 }
 
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
 
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -1px;
-  bottom: 0;
-  border: 0;
-  background: #6581a6;
-  font-size: 16px;
-  padding: 0 20px;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
 
-#footer .footer-top .social-links {
-  margin-top: 30px;
-}
+
 
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -108,15 +81,10 @@
   font-size: 13px;
 }
 
-@media (max-width: 768px) {
-  .about-lists .content-item {
-    padding: 40px 0;
-  }
-
+@media (max-width: 768px){
   #footer .copyright,
   #footer .credits {
     padding: 5px;
-    float: none;
     text-align: center;
   }
 }
